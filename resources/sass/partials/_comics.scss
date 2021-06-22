@@ -1,0 +1,57 @@
+main.comics{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 0 0.8rem;
+  & > .container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.8rem 0;
+  }
+  h4{
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    background-color: $f-color;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  span{
+    display: inline-block;
+    background-color: $f-color;
+    margin-bottom: 2rem;
+    padding: 1rem 5rem;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  div.card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 6);
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    img{
+      width: 180px;
+      height: 200px;
+      cursor: pointer;
+    }
+    h5{
+      width: 80%;
+      text-transform: uppercase;
+      color: white;
+      margin-top: 1rem;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+}

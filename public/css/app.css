@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+main.comics {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 0 0.8rem;
+}
+main.comics > .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8rem 0;
+}
+main.comics h4 {
+  position: absolute;
+  top: -5%;
+  left: 10%;
+  background-color: #00a9d9;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main.comics span {
+  display: inline-block;
+  background-color: #00a9d9;
+  margin-bottom: 2rem;
+  padding: 1rem 5rem;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+main.comics div.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 6);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+main.comics div.card img {
+  width: 180px;
+  height: 200px;
+  cursor: pointer;
+}
+main.comics div.card h5 {
+  width: 80%;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 1rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+main.comics div.card:hover {
+  transform: scale(1.05);
+}
