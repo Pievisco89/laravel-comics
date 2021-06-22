@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 120px;
+    margin: auto;
+    img{
+      width: 80px;
+    }
+    ul{
+      display: flex;
+      li{  
+        margin: 0 0.5rem;
+        a{
+          text-transform: uppercase;
+          color: #464646;
+          font-weight: 700;
+          &.active{
+            color: $f-color;
+            border-bottom: 5px solid $f-color;
+            padding-bottom: 46px;
+          }
+        }
+      }
+    }
+  }

@@ -10,9 +10,11 @@
     <body>
 
         @include('partials.header')
+        @include('partials.jumbotron')
 
         @yield('content')
 
+        @include('partials.shop')
         @include('partials.footer')
 
     </body>
