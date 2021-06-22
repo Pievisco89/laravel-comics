@@ -8,7 +8,7 @@
     <ul>
 
       <li>
-        <a class="{{ (request()->is('/characters')) ? 'active' : '' }}" 
+        <a class="{{ (request()->is('characters')) ? 'active' : '' }}" 
           href="{{ route('characters') }}">Characters</a>
       </li>
       <li>
@@ -17,45 +17,45 @@
         href="{{ route('comics') }}">Comics</a>
       </li>
       <li>
-        <a class="{{ (request()->is('/movies')) ? 'active' : '' }}" 
+        <a class="{{ (request()->is('movies')) ? 'active' : '' }}" 
           href="{{ route('movies') }}">Movies</a>
       </li>
       <li>
         <a 
-        class="{{ (request()->is('/tv')) ? 'active' : '' }}"
+        class="{{ (request()->is('tv')) ? 'active' : '' }}"
         href="{{ route('tv') }}">TV</a>
       </li>
       <li>
-        <a class="{{ (request()->is('/games')) ? 'active' : '' }}"
+        <a class="{{ (request()->is('games')) ? 'active' : '' }}"
         href="{{ route('games') }}"
         >Games</a>
       </li>
       <li>
         <a 
-          class="{{ (request()->is('/collectibles')) ? 'active' : '' }}"
+          class="{{ (request()->is('collectibles')) ? 'active' : '' }}"
           href="{{ route('collectibles') }}">Collectibles</a>
       </li>
       <li>
         <a 
-        class="{{ (request()->is('/videos')) ? 'active' : '' }}"
+        class="{{ (request()->is('videos')) ? 'active' : '' }}"
           href="{{ route('videos') }}"
         >Videos</a>
       </li>
       <li>
         <a 
-        class="{{ (request()->is('/fans')) ? 'active' : '' }}"
+        class="{{ (request()->is('fans')) ? 'active' : '' }}"
           href="{{ route('fans') }}"
         >Fans</a>
       </li>
       <li>
         <a 
-        class="{{ (request()->is('/news')) ? 'active' : '' }}"
+        class="{{ (request()->is('news')) ? 'active' : '' }}"
           href="{{ route('news') }}"
         >News</a>
       </li>
       <li>
         <a 
-        class="{{ (request()->is('/shops')) ? 'active' : '' }}"
+        class="{{ (request()->is('shops')) ? 'active' : '' }}"
           href="{{ route('shops') }}"
         >Shop</a>
       </li>
